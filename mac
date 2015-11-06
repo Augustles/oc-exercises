@@ -1,0 +1,8 @@
+#! /bin/bash
+############# Setup for Object C ##################
+TARGET=$1
+SOURCE=$2
+
+
+CMD="gcc -fconstant-string-class=NSConstantString -o ${TARGET} ${SOURCE} -I/usr/include/GNUstep  -lobjc -lgnustep-base"
+${CMD}
